@@ -1,4 +1,4 @@
-package org.example.web.dto;
+package net.blog.web.dto;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

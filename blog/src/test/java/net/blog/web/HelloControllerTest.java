@@ -1,4 +1,4 @@
-package org.example.web;
+package net.blog.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
