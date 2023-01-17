@@ -37,4 +37,6 @@ dependencies {
     implementation('com.h2database:h2')
     // 템플릿엔진
     implementation('org.springframework.boot:spring-boot-starter-mustache')
+    // oauth2
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
 }
