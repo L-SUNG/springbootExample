@@ -11,7 +11,10 @@
                 {{/loginUserName}}
                 <!-- 로그인버튼 userName 값이 존재하지 않을경우 -->
                 {{^loginUserName}}
+                    <!-- 구글 -->
                     <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
+                    <!-- 네이버 -->
+                    <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
                 {{/loginUserName}}
             </div>
         </div>
