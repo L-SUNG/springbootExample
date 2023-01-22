@@ -43,4 +43,6 @@ dependencies {
     implementation('org.springframework.session:spring-session-jdbc')
     // 세큐리티 테스트
     implementation('org.springframework.security:spring-security-test')
+    // MySQL
+    implementation('mysql:mysql-connector-java')
 }
