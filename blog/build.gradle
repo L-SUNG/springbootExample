@@ -16,14 +16,19 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'war'
 
-group 'org.example'
+group 'net.blog'
 version '1.0.4-SNAPSHOT-'+new Date().format("yyyyMMddHHmmss")
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
     jcenter()
+}
+
+bootWar {
+    archiveName = 'ROOT.war'
 }
 
 dependencies {
@@ -45,4 +50,6 @@ dependencies {
     implementation('org.springframework.security:spring-security-test')
     // MySQL
     implementation('mysql:mysql-connector-java')
+    // 외장톰캣사용
+    providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 }
